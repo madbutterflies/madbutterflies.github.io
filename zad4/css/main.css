@@ -1,0 +1,112 @@
+*{
+    background-color: #ffffff;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 100%;
+    background-color: #ffffff;
+    max-width: 1120px;
+    margin: 4vw 30vw;
+}
+
+form {
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    background-color: #0000ff;
+    max-width: 600px;
+    max-height: 800px;
+    width: 40vw;
+    height: 55vw;
+    border-radius: 30px;
+    border:0;
+    padding: 2%;
+}
+label {
+    background-color: inherit;
+    padding: 0;
+    display: inline-block;
+    width: 35%;
+    text-align: right;
+}
+input[type='submit'] {
+    margin: 2% 11% 2% 48%;
+    width: 40%;
+    padding: 2%;
+    border-radius: 10px;
+    background-color: #000099;
+    border: 0;
+}
+input {
+    width: 50%;
+}
+input, textarea, select {
+    font-family: inherit;
+    margin: 2%;
+    padding: 1%;
+    height: 6%;
+    border-radius: 10px;
+    text-align: center;
+
+    position: relative;
+
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+textarea {
+    vertical-align: top;
+}
+
+@media screen and (min-width: 901px) {
+    label, input {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+    label, input {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body {background-color: #0000ff;}
+    .container {
+        margin:0;
+    }
+    form {
+        width: 100%;
+        border-radius: 0;
+        height: 100%;
+    }
+    label {width:25%;}
+    input[type='submit'] {
+        margin: 2% 28%;
+        width: 50%;
+    }
+    label, input {
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 300px) {
+    body {background-color: #0000ff;}
+    .container {
+        margin:0;
+    }
+    form {
+        width: 100%;
+        border-radius: 0;
+        height: 100%;
+    }
+    label {width:35%;}
+    input[type='submit'] {
+        margin: 2% 40%;
+        width: 50%;
+    }
+    label, input {
+        font-size: 8px;
+    }
+}

@@ -1,0 +1,24 @@
+body{
+    font-family: sans-serif;
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+.main{
+    text-align: center;
+    padding-top: 5%;
+}
+.go{
+    padding:10px;
+    background-color: #000000;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    width: 200px;
+    display:block;
+    margin: 10px auto;
+    border-radius: 7px;
+}

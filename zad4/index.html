@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Zadanie 4</title>
+</head>
+<body>
+<div class="container">
+    <form name="register">
+        <label for="name" onkeypress="change(this)">imię:</label>
+        <input id="name" type="text" placeholder="imię" name="name">
+        <label for="surname">nazwisko:</label>
+        <input id="surname" type="text" placeholder="nazwisko" name="surname">
+        <label for="email">e-mail</label>
+        <input id="email" type="text" placeholder="e-mail" name="email">
+        <label for="street">ulica:</label>
+        <input id="street" type="text" placeholder="ulica" name="street">
+        <label for="street-number">numer:</label>
+        <input id="street-number" type="text" placeholder="nr" name="street-number">
+        <label for="house-number">mieszkanie:</label>
+        <input id="house-number" type="text" placeholder="nr" name="house-number">
+        <label for="postal-0">kod:</label>
+        <input id="postal-0" type="text" placeholder="00-000" name="postal-0" onkeydown="form.js/postal(this)">
+        <label for="city">miasto:</label>
+        <input id="city" type="text" placeholder="miasto" name="city">
+        <label for="password">hasło:</label>
+        <input id="password" type="password" placeholder="hasło" name="password">
+        <label for="rpt-password">powtórz :</label>
+        <input id="rpt-password" type="password" placeholder="hasło" name="rpt-password">
+        <input type="submit" value="wyślij">
+    </form>
+</div>
+<script src="js/form.js"></script>
+</body>
+</html>

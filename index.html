@@ -5,36 +5,27 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Zadanie 5</title>
+    <title>Menu</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<script>
-    window.fbAsyncInit = function() {
-        FB.init({
-            appId            : '1965129033816827',
-            autoLogAppEvents : true,
-            xfbml            : true,
-            version          : 'v2.12'
-        });
-    };
-    (function(d, s, id){
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) {return;}
-        js = d.createElement(s); js.id = id;
-        js.src = "https://connect.facebook.net/en_US/sdk.js";
-        fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-    function getFacebookData() {
-        FB.login(function(){
-            FB.api('/me','GET',function(response)
-            {
-                console.log(response);
-                document.querySelector('.data').innerHTML = response.name;
-            });
-        });
-    }
-</script>
-<button onclick="getFacebookData()">Kliknij, a Facebook zrobi magię!</button>
-<div class="data"></div>
+<div class="main">
+    <h1>
+        Magdalena Głażewska
+    </h1>
+    <p>
+        Programowanie w Internecie
+    </p>
+    <ul>
+        <li><a class="go" href="zad1">Zadanie Pierwsze</a></li>
+        <li><a class="go" href="zad2">Zadanie Drugie</a></li>
+        <li><a class="go" href="zad3">Zadanie Trzecie</a></li>
+        <li><a class="go" href="zad4">Zadanie Czwarte</a></li>
+        <li><a class="go" href="zad5/madbutterflies.github.io/index.html">Zadanie Piąte</a></li>
+        <li><a class="go" href="zad4">Zadanie Szóste/Projekt</a></li>
+        <li><a class="go" href="zad4">Zadanie Siódme</a></li>
+        <li><a class="go" href="zad4">Zadanie Czwarte</a></li>
+    </ul>
+</div>
 </body>
 </html>
