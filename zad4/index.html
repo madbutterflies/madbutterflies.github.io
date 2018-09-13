@@ -9,28 +9,38 @@
 </head>
 <body>
 <div class="container">
-    <form name="register">
-        <label for="name" onkeypress="change(this)">imię:</label>
-        <input id="name" type="text" placeholder="imię" name="name">
-        <label for="surname">nazwisko:</label>
-        <input id="surname" type="text" placeholder="nazwisko" name="surname">
-        <label for="email">e-mail</label>
-        <input id="email" type="text" placeholder="e-mail" name="email">
-        <label for="street">ulica:</label>
-        <input id="street" type="text" placeholder="ulica" name="street">
-        <label for="street-number">numer:</label>
-        <input id="street-number" type="text" placeholder="nr" name="street-number">
-        <label for="house-number">mieszkanie:</label>
-        <input id="house-number" type="text" placeholder="nr" name="house-number">
-        <label for="postal-0">kod:</label>
-        <input id="postal-0" type="text" placeholder="00-000" name="postal-0" onkeydown="form.js/postal(this)">
-        <label for="city">miasto:</label>
-        <input id="city" type="text" placeholder="miasto" name="city">
-        <label for="password">hasło:</label>
-        <input id="password" type="password" placeholder="hasło" name="password">
-        <label for="rpt-password">powtórz :</label>
-        <input id="rpt-password" type="password" placeholder="hasło" name="rpt-password">
-        <input type="submit" value="wyślij">
+    <form class="register-form" name="register">
+        <a class="wide-button" id="exit" href="../">wróć</a>
+        <div class="text-input">
+            <label class="text-input-label" for="name">imię:</label>
+            <input class="text-input-input" id="name" type="text" placeholder="imię" name="name">
+        </div>
+        <div class="text-input">
+            <label class="text-input-label" for="surname">nazwisko:</label>
+            <input class="text-input-input" id="surname" type="text" placeholder="nazwisko" name="surname">
+        </div>
+        <div class="text-input">
+            <label class="text-input-label" for="email">e-mail</label>
+            <input class="text-input-input" id="email" type="text" placeholder="e-mail" name="email">
+        </div>
+        <div class="text-input">
+            <label class="text-input-label" for="password">hasło:</label>
+            <input class="text-input-input" id="password" type="password" placeholder="hasło" name="password">
+        </div>
+        <div class="text-input">
+            <label class="text-input-label" for="rpt-password">powtórz :</label>
+            <input class="text-input-input" id="rpt-password" type="password" placeholder="hasło" name="rpt-password">
+        </div>
+        <div class="agreements">
+            <label id="agreement" for="agree">
+                &quot;Wyrażam zgodę na przetwarzanie moich danych osobowych. Informuję, że dane nie będą wykorzystywane do celów zarobkowych ani udostępniane innym podmiotom.&quot;
+            </label>
+            <div class="checkbox-container">
+                <input id="agree" type="checkbox">
+            </div>
+            <div class="clear"></div>
+        </div>
+        <input class="wide-button" type="submit" id="sub-button" value="wyślij">
     </form>
 </div>
 <script src="js/form.js"></script>

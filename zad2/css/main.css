@@ -1,5 +1,6 @@
 *{
     font-family: sans-serif;
+    background-color: #D3B6CE;
 }
 .container {
     width: 100%;
@@ -21,7 +22,7 @@
     height: calc(100%/3 - 2.25px);
     float: left;
     border-style: solid;
-    border-color: #000000;
+    border-color: #44213E;
     text-align: center;
     font-size: 120px;
     cursor: pointer;
@@ -78,13 +79,13 @@
     text-align: center;
 }
 .player.active {
-    background-color: #f0f8ff;
+    background-color: #F1D9ED;
 }
 .action {
-    border: 2px solid #ee0000;
+    border: 2px solid #351930;
     padding: 10px;
     border-radius: 5px;
-    background-color: #ee0000;
+    background-color: #271223;
     color: #ffffff;
     font-size: 18px;
     cursor: pointer;

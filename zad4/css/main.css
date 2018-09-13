@@ -1,112 +1,92 @@
 *{
-    background-color: #ffffff;
-    font-family: sans-serif;
-}
-
-.container {
-    width: 100%;
-    background-color: #ffffff;
-    max-width: 1120px;
-    margin: 4vw 30vw;
-}
-
-form {
-    position: relative;
-    display: inline-block;
     box-sizing: border-box;
-    background-color: #0000ff;
-    max-width: 600px;
-    max-height: 800px;
-    width: 40vw;
-    height: 55vw;
-    border-radius: 30px;
-    border:0;
-    padding: 2%;
 }
-label {
-    background-color: inherit;
+body{
+    font-family: sans-serif;
+    margin: 0;
     padding: 0;
-    display: inline-block;
-    width: 35%;
-    text-align: right;
 }
-input[type='submit'] {
-    margin: 2% 11% 2% 48%;
-    width: 40%;
-    padding: 2%;
-    border-radius: 10px;
-    background-color: #000099;
-    border: 0;
+.container{
+    width: 100%;
+    margin: 0 auto;
 }
-input {
-    width: 50%;
+.register-form{
+    width: 100%;
+    background-color: #086E80;
+    padding: 10px;
+    color: #ffffff;
 }
-input, textarea, select {
-    font-family: inherit;
-    margin: 2%;
-    padding: 1%;
-    height: 6%;
+.wide-button{
+    padding: 10px;
+    background-color: #076070;
+    display: block;
+    color: #ffffff;
+    font-weight: 800;
     border-radius: 10px;
     text-align: center;
-
-    position: relative;
-
-
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: capitalize;
+    width: 100%;
+    border: none;
 }
-textarea {
-    vertical-align: top;
+.text-input{
+    padding: 10px;
 }
+.text-input-label{
+    text-transform: capitalize;
+    display: block;
+    padding: 5px 0;
+}
+.text-input-input{
+    height: 40px;
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+}
+.agreements{
+    padding: 10px;
+}
+.checkbox-container{
+    padding: 5px;
+}
+#agreement{
+    display: block;
+    width: 90%;
+    float: left;
+}
+.checkbox-container{
+    float: left;
+    display: block;
+    width: 10%;
+    text-align: center;
+}
+.clear{
+    clear: both;
+}
+@media screen and (min-width: 768px) {
+    .container{
+        max-width: 720px;
+        padding-top: 20px;
+    }
+    .register-form{
+        border-radius: 15px;
+    }
+}
+@media screen and (min-width: 992px) {
+    .container{
+        max-width: 960px;
+    }
+    .register-form{
+        max-width: 760px;
+        margin: 0 auto;
+    }
+}
+@media screen and (min-width: 1200px){
+    .container{
+        max-width: 1120px;
+    }
+    .register-form{
 
-@media screen and (min-width: 901px) {
-    label, input {
-        font-size: 20px;
-    }
-}
-
-@media screen and (min-width: 600px) and (max-width: 900px) {
-    label, input {
-        font-size: 15px;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    body {background-color: #0000ff;}
-    .container {
-        margin:0;
-    }
-    form {
-        width: 100%;
-        border-radius: 0;
-        height: 100%;
-    }
-    label {width:25%;}
-    input[type='submit'] {
-        margin: 2% 28%;
-        width: 50%;
-    }
-    label, input {
-        font-size: 12px;
-    }
-}
-@media screen and (max-width: 300px) {
-    body {background-color: #0000ff;}
-    .container {
-        margin:0;
-    }
-    form {
-        width: 100%;
-        border-radius: 0;
-        height: 100%;
-    }
-    label {width:35%;}
-    input[type='submit'] {
-        margin: 2% 40%;
-        width: 50%;
-    }
-    label, input {
-        font-size: 8px;
     }
 }
